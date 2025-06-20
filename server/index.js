@@ -22,6 +22,8 @@ const transporter = nodemailer.createTransport({
 // Contact form endpoint
 app.post('/api/contact', async (req, res) => {
   try {
+    console.log("contact form endpoint hit");
+    console.log(req.body);
     const { name, email, subject, message } = req.body;
 
     // Email options
