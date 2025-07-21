@@ -12,6 +12,7 @@ import Services from './pages/Services';
 import Timeline from './pages/Timeline';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
+import NotFound from './pages/NotFound';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
@@ -34,6 +35,7 @@ function App() {
            <Route path="/timeline" element={<Timeline />} />
            <Route path="/blog" element={<Blog />} />
            <Route path="/contact" element={<Contact />} />
+           <Route path="*" element={<NotFound />} />
          </Routes>
        </Router>
      </ThemeProvider>
