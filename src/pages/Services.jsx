@@ -7,6 +7,7 @@ import {
   FaDatabase,
   FaTachometerAlt,
 } from 'react-icons/fa';
+import { Helmet } from "react-helmet";
 
 const services = [
   {
@@ -47,6 +48,10 @@ const Services = () => {
         background: `linear-gradient(135deg, ${theme.palette.background.default} 0%, ${theme.palette.background.paper} 100%)`,
       }}
     >
+      <Helmet>
+        <title>Services | Irtiza Ali</title>
+        <meta name="description" content="Discover the web development services offered by Irtiza Ali, including frontend, backend, and full stack solutions." />
+      </Helmet>
       <Container maxWidth="lg">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -20,6 +20,7 @@ import {
   FaDownload,
 } from 'react-icons/fa';
 import resume from '../assets/CV.pdf';
+import { Helmet } from "react-helmet";
 
 const Contact = () => {
   const theme = useTheme();
@@ -118,6 +119,10 @@ const Contact = () => {
         background: `linear-gradient(135deg, ${theme.palette.background.default} 0%, ${theme.palette.background.paper} 100%)`,
       }}
     >
+      <Helmet>
+        <title>Contact | Irtiza Ali</title>
+        <meta name="description" content="Contact Irtiza Ali for web development projects, collaborations, or inquiries." />
+      </Helmet>
       <Container maxWidth="lg">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

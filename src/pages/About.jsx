@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Box, Container, Typography, Paper, useTheme } from '@mui/material';
+import { Helmet } from "react-helmet";
 
 const About = () => {
   const theme = useTheme();
@@ -12,6 +13,10 @@ const About = () => {
         background: `linear-gradient(135deg, ${theme.palette.background.default} 0%, ${theme.palette.background.paper} 100%)`,
       }}
     >
+      <Helmet>
+        <title>About | Irtiza Ali</title>
+        <meta name="description" content="Learn more about Irtiza Ali, a passionate web developer and software engineering student at UET Lahore." />
+      </Helmet>
       <Container maxWidth="lg">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

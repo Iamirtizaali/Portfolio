@@ -5,6 +5,7 @@ import css from '../assets/css.webp';
 import react from '../assets/react.webp';
 import node from '../assets/node.webp';
 import React, { useState } from 'react';
+import { Helmet } from "react-helmet";
 
 const blogPosts = [
   {
@@ -52,6 +53,10 @@ const Blog = () => {
         background: `linear-gradient(135deg, ${theme.palette.background.default} 0%, ${theme.palette.background.paper} 100%)`,
       }}
     >
+      <Helmet>
+        <title>Blog | Irtiza Ali</title>
+        <meta name="description" content="Read articles and tutorials by Irtiza Ali on web development, React, Node.js, and more." />
+      </Helmet>
       <Container maxWidth="lg">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://irtiza-ali.netlify.app/sitemap.xml
+
+# Block sensitive files and folders (none for public portfolio)
+# Disallow: /server/
+# Disallow: /private/ 

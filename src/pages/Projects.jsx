@@ -4,6 +4,7 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 import limoarc from '../assets/limoarc.png';
 import onyx from '../assets/onyx.png';
 import giftshare from '../assets/giftshare.png';
+import { Helmet } from "react-helmet";
 
 const projects = [
   {
@@ -43,6 +44,10 @@ const Projects = () => {
         background: `linear-gradient(135deg, ${theme.palette.background.default} 0%, ${theme.palette.background.paper} 100%)`,
       }}
     >
+      <Helmet>
+        <title>Projects | Irtiza Ali</title>
+        <meta name="description" content="Explore featured projects by Irtiza Ali, including web apps, platforms, and open-source work." />
+      </Helmet>
       <Container maxWidth="lg">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

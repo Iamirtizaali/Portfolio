@@ -2,6 +2,12 @@ import { motion } from 'framer-motion';
 import { Box, Container, Typography, Button, useTheme } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 import profilePic from '../assets/irtiza.png';
+import { Helmet } from "react-helmet";
+
+<Helmet>
+  <title>Irtiza Ali | Backend Developer</title>
+  <meta name="description" content="Explore Irtiza Ali's skills in MERN Stack, backend APIs, and modern web development." />
+</Helmet>
 
 const Home = () => {
   const theme = useTheme();

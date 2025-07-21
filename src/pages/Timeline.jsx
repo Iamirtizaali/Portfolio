@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { Box, Container, Typography, Paper, useTheme } from '@mui/material';
 import { FaGraduationCap, FaCode, FaProjectDiagram } from 'react-icons/fa';
+import { Helmet } from "react-helmet";
 
 const timelineData = [
   {
@@ -46,6 +47,10 @@ const Timeline = () => {
         background: `linear-gradient(135deg, ${theme.palette.background.default} 0%, ${theme.palette.background.paper} 100%)`,
       }}
     >
+      <Helmet>
+        <title>Timeline | Irtiza Ali</title>
+        <meta name="description" content="Follow the professional journey and milestones of Irtiza Ali, web developer and software engineer." />
+      </Helmet>
       <Container maxWidth="lg">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

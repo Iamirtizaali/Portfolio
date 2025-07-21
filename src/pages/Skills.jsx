@@ -11,7 +11,8 @@ import {
   SiPython,
   SiDotnet,
 } from 'react-icons/si';
-import { FaMicrosoft } from 'react-icons/fa'; 
+import { FaMicrosoft } from 'react-icons/fa';
+import { Helmet } from "react-helmet";
 
 const skills = [
   { name: 'HTML', icon: SiHtml5, level: 90 },
@@ -38,6 +39,10 @@ const Skills = () => {
         background: `linear-gradient(135deg, ${theme.palette.background.default} 0%, ${theme.palette.background.paper} 100%)`,
       }}
     >
+      <Helmet>
+        <title>Skills | Irtiza Ali</title>
+        <meta name="description" content="View the technical skills and technologies mastered by Irtiza Ali, including React, Node.js, MongoDB, and more." />
+      </Helmet>
       <Container maxWidth="lg">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
